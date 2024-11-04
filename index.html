@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos de Desempenho do KNN</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .chart-container {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="text-center my-4">Análise de Desempenho do KNN</h1>
+
+    <!-- Gráfico 1 -->
+    <div class="chart-container">
+        <h3>Gráfico 1: Curva ROC - KNN</h3>
+        <p>Este gráfico mostra a Curva ROC (Receiver Operating Characteristic) para o modelo KNN, permitindo avaliar a capacidade de separação entre as classes. A área sob a curva (AUC) é uma medida do desempenho do modelo.</p>
+        <img src="./images/grafico-roc.png" alt="Curva ROC - KNN" class="img-fluid">
+    </div>
+
+    <!-- Gráfico 2 -->
+    <div class="chart-container">
+        <h3>Gráfico 2: Acurácia em Função de k - KNN</h3>
+        <p>A acurácia do modelo KNN é analisada em função do número de vizinhos (k). Este gráfico ilustra como a escolha do valor de k impacta na performance do modelo.</p>
+        <img src="./images/grafico-acuracia_k.png" alt="Acurácia em Função de k - KNN" class="img-fluid">
+    </div>
+
+    <!-- Gráfico 3 -->
+    <div class="chart-container">
+        <h3>Gráfico 3: Precisão e Recall em Função do Limiar - KNN</h3>
+        <p>Este gráfico apresenta a relação entre precisão e recall conforme o limiar de decisão é alterado. É uma ferramenta importante para entender o trade-off entre precisão e sensibilidade do modelo.</p>
+        <img src="./images/grafico-precisao_recall.png" alt="Precisão e Recall em Função do Limiar - KNN" class="img-fluid">
+    </div>
+
+    <!-- Gráfico 4 -->
+    <div class="chart-container">
+        <h3>Gráfico 4: Matriz de Confusão - KNN</h3>
+        <p>A matriz de confusão fornece uma visão detalhada da performance do modelo KNN, mostrando o número de verdadeiros positivos, falsos positivos, verdadeiros negativos e falsos negativos. Essa informação é essencial para entender onde o modelo acerta e onde ele erra.</p>
+        <img src="./images/grafico-matriz.png" alt="Matriz de Confusão - KNN" class="img-fluid">
+    </div>
+
+    <!-- Gráfico 5 -->
+    <div class="chart-container">
+        <h3>Gráfico 5: Distribuição das Distâncias dos Vizinhos - KNN</h3>
+        <p>Este gráfico mostra a distribuição das distâncias dos vizinhos mais próximos utilizados pelo modelo KNN. Compreender como essas distâncias se distribuem pode ajudar a identificar como os dados estão agrupados e a influência dos vizinhos na classificação.</p>
+        <img src="./images/grafico-distancia.png" alt="Distribuição das Distâncias dos Vizinhos - KNN" class="img-fluid">
+    </div>
+    
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
